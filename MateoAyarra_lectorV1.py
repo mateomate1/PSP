@@ -9,18 +9,28 @@ Al introducir una caracter de fin (-1, fin, etc.) el programa terminara
 '''
 import pprint 
 
+
 diccionario = {}
 f = open('texto.txt', 'r', encoding='UTF-8')
-contenido = f.read().replace('-','').replace(',','').replace('.','').replace('á','a').replace('é','e').replace('í','i').replace('ó','o').replace('ú','u')
-palabras = contenido.split('')
+contenido = f.read().replace('-','').replace(',','').replace('.','').replace('¿','').replace('?','').replace('¡','').replace('!','')
+palabras = contenido.split()
 for palabra in palabras:
     palabra = palabra.lower()
-    print(palabra)
     if palabra.lower() not in diccionario:
         diccionario[palabra] = 1
     else:
         diccionario[palabra] += 1
 
+#for clave in diccionario:
+#    print(f'{clave} : {diccionario[clave]}')
+
 f.close()
 
-clave = input('Introduce una palabra a buscar(-1 para salir)')
+clave = input('Introduce una palabra a buscar(-1 para salir): ').lower()
+while clave != '-1':
+    if clave in diccionario:
+        print(f'La palabra "{clave}" se repite {diccionario[clave]} veces')
+    else:
+        print(f'La palabra "{clave}" se repite 0 veces')
+    clave = input('Introduce una palabra a buscar(-1 para salir): ').lower()
+print('Has salido del programa')
