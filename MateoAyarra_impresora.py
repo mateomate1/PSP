@@ -16,9 +16,30 @@ import multiprocessing as mp
 import time
 import os
 
+path = 'texto.txt'
+f = open(path, 'r', encoding='UTF-8')
 
-f = open('texto.txt', 'r', encoding='UTF-8')
-texto = input()
-while texto != '-1' and texto !='-p':
-    
-    texto = input()
+def imprimir():
+    time.sleep(5)
+    f = open(path, 'r', encoding='UTF-8')
+    print('------------------------------')
+    print(f.read())
+    print('------------------------------')
+    f.close()
+    print('process id:'+str(os.getppid()))
+
+def main():
+    print('Comenzando programa')
+    x = input('->')
+    while x != '-1':
+        if(x == '-p'):
+            x = mp.Process(target = imprimir)
+            x.start()
+        else:
+            with open(path, 'a', encoding="UTF-8") as f:
+                f.write(x+'\n')
+        x = input('->')
+    print('process id:'+ str(os.getpid()))
+
+if __name__ == '__main__':
+    main()
