@@ -7,7 +7,7 @@ def main():
     error = False
     while not error:
         try:
-            subproc = subprocess.Popen(["C:/Users/Alumno/AppData/Local/Programs/Python/Python313/python.exe", "procesoExterno.py"],  stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            subproc = subprocess.Popen(["C:/Users/Mateo/AppData/Local/Programs/Python/Python313/python.exe", "procesoExterno.py"],  stdout=subprocess.PIPE, stderr=subprocess.PIPE)
             (standardout, standarderr) = subproc.communicate()
             salidaStr = standardout.decode("UTF-8")
             standarderr = standardout.decode("UTF-8")
@@ -19,7 +19,6 @@ def main():
             error = True
             salidaStr = "Error en comando"
             print(standarderr)
-    
 
 
 if __name__ == '__main__':
