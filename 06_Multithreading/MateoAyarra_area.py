@@ -12,10 +12,16 @@
 import threading
 
 def areaTriangulo(base, altura):
-    return (base*altura)/2
+    resultado = (base*altura)/2
+    figura0.append(resultado)
+    print(f'El triangulo de base {base} y altura {altura} tiene un area de {resultado} u^2')
+    return resultado
 
 def areaRectangulo(base, altura):
-    return (base*altura)
+    resultado = (base*altura)
+    figura0.append(resultado)
+    print(f'El rectangulo de base {base} y altura {altura} tiene un area de {resultado} u^2')
+    return resultado
 
 def operarFigura(figura):
     forma = figura['forma']
@@ -42,7 +48,23 @@ figura4 = {'forma' : 't', 'base' : 26-(10+8+6), 'altura' : 5}
 figura0 = []
 
 def main():
-    
+    hilof1 = threading.Thread(target=operarFigura, args=(figura1,))
+    hilof2 = threading.Thread(target=operarFigura, args=(figura2,))
+    hilof3 = threading.Thread(target=operarFigura, args=(figura3,))
+    hilof4 = threading.Thread(target=operarFigura, args=(figura4,))
+
+    hilof1.start()
+    hilof2.start()
+    hilof3.start()
+    hilof4.start()
+
+    hilof1.join()
+    hilof2.join()
+    hilof3.join()
+    hilof4.join()
+
+    areaTotal = sum(figura0)
+    print(f'El area total es: {areaTotal} u^2')
 
 if __name__ == "__main__":
     main()

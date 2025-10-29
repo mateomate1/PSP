@@ -15,7 +15,7 @@ def main():
     hiloTriangulo2 = threading.Thread(target=areaTriangulo, args=(5,2,resultado,1))
     hiloRectangulo = threading.Thread(target=areaRectangulo, args=(8,12,resultado,2))
     hiloRectangulo2 = threading.Thread(target=areaRectangulo, args=(6,5,resultado,3))
-   
+    
     hiloTriangulo.start()
     hiloTriangulo2.start()
     hiloRectangulo.start()
