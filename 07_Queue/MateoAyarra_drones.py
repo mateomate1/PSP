@@ -33,7 +33,6 @@ def vigilaHorizonte():
     i = random.randint(0, 9)
     return(situacion[i])
 '''
-import threading
 import time
 import queue
 import random
@@ -101,7 +100,7 @@ def main():
     global encendido
     opc = 0
     while (opc != '3'):
-        opc = input('Inserte una instruccion(1: Despegar nuevo dron, 2: Apagar dron 3: 0: Salir):')
+        opc = input('Inserte una instruccion(1: Despegar nuevo dron, 2: Apagar dron 3: Salir):')
         if(opc == '1'):
             despegarDron()
         elif(opc == '2'):
