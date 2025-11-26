@@ -1,5 +1,9 @@
 x = ''
 
+modoRead = 'r'
+modoAppend = 'a'
+modoWrite = 'w'
+
 def write():
     with open('fichero.txt', 'r', encoding = 'utf-8') as f: #Metodo 1 para abrir ficheros, se cierra automaticamente
         texto = f.read() #Esto lee el teto entero en una sola variable
