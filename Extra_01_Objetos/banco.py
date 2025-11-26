@@ -34,12 +34,30 @@ Fichero alumnoApellido_BOO.py con el resto del código que usa la clase cuenta
 '''
 
 class Cuenta:
-    def __init__(self, nombre_cliente, numero_cuenta, saldo):
+    '''
+    - Datos
+    Nombre del cliente
+    Número de cuenta
+    Saldo
+    Movimientos: Lista de: fecha (string), “tipo de movimiento” (string), cantidad (float).
+    Tipo de movimiento será uno de: “apertura”, “ingreso”, “pago”, “cierre”
+
+    - Métodos
+    Creación del objeto: Parametro de entrada (nombre, fecha)
+    Crea un número de cuenta de 10 dígitos usando    str(hash(nombre))[-10:]
+    Pone un movimiento inicial de apertura
+    ingreso  acepta la cantidad, la suma al saldo y registra el movimiento
+    reintegro  acepta la cantidad, la suma al saldo y registra el movimiento
+    verSaldo  devuelve el saldo.
+    verCliente  devuelve el nombre del cliente.
+    '''
+
+    def __init__(self, nombre_cliente, numero_cuenta, saldo, movimientos):
         self.nombre_cliente = nombre_cliente
         self.numero_cuenta = numero_cuenta
         self.saldo = saldo
+        self.movimientos = movimientos
     
-    def funcion():
-        print("")
-
-class Movimiento
+    def addMovimiento(movimiento):
+        if not isinstance(movimiento, dict):
+            
