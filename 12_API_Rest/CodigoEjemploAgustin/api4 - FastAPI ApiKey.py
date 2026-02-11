@@ -30,5 +30,5 @@ def saludo(nombre: str, edad: int, ok = Depends(comprueba)):
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="192.168.1.39", port=8090)
+    uvicorn.run(app, host="192.168.1.0", port=8090)
 

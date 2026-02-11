@@ -9,6 +9,8 @@ print("Pi: {:.3f}".format(3.141592)) #Formato que condiciona el numero de digito
 # : Sirve para decirle al formato que el numero tmb esta formateado
 # .Xf Siendo X el numero de decimales a mostrar, la f se usa si es un numero tipo float
 print("Pi: {:05d}".format(313))
+#Es lo mismo que:
+print(f'Pi: {313:05d}')
 # 0Xd Sirve para añadir 0 hasta llegar al numero de decimales, si supera de por si este numero no hara nada
 print("Pi: {:5d}".format(313))
 # Xd Si no usamos el 0 simplemente movera X caracteres el numero

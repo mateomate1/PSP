@@ -1,0 +1,42 @@
+[
+    {
+        "nombre": "X",
+        "provincia": "X",
+        "prediccion": {
+            "dia": [
+                {
+                    "fecha": "X",
+                    "estadoCielo": [
+                        {
+                            "periodo": "00-24",
+                            "descripcion": ""
+                        }
+                    ],
+                    "temperatura": [
+                        {
+                            "dato": [
+                                {
+                                    "value": 9,
+                                    "hora": 6
+                                }
+                            ]
+                        }
+                    ],
+                    "probPrecipitacion": [
+                        {
+                            "value": 0,
+                            "periodo": "00-06"
+                        }
+                    ],
+                    "viento": [
+                        {
+                            "direccion": "",
+                            "velocidad": 0,
+                            "periodo": "00-06"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+]
