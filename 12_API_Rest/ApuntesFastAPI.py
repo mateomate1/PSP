@@ -106,3 +106,5 @@ if __name__ == "__main__":
     #sin embargo cambia con el host de la conexion
     IP = '192.168.1.26'
     uvicorn.run(app, host="IP", port=8090)
+    #Al correrlo con uvicorn se genera una documentacion automatica en URL_base/docs
+    #Ejemplo: http://localhost:8090/docs
