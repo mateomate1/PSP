@@ -26,12 +26,13 @@ Con lo que devuelva AEMET se construye el formato pedido y se devuelve.
 '''
 
 from fastapi import FastAPI, Depends, HTTPException, status
-from fastapi.security import HTTPBasic, HTTPBasicCredentials
 import requests
 import json
 import os
 import pandas as pd
 import uvicorn
+import time
+from datetime import datetime
 
 #Api a procesar
 BASE = 'https://opendata.aemet.es/opendata'
@@ -50,15 +51,30 @@ df = pd.read_csv(ruta)
 #Api de salida
 app = FastAPI()
 
+#Fichero log:
+rutaLog = os.path.join(base, "AEMET_Mejorada.log")
+
+def log(s):
+    timestamp = time.time()
+    fecha = datetime.fromtimestamp(timestamp)
+    m = f'Time: {fecha} Msg: {s} \n'
+    with open(rutaLog, 'a', encoding='utf-8') as f:
+        print(m)
+        f.write(m)
+
 
 def preguntar(entrada):
     lista = buscar(entrada)
+    log(f'Buscando el cp del municipio {entrada}')
     salida = {}
     if lista.empty:
+        log(f'No se encontro el municipio extacto')
         lista = listar(entrada)
+        log(f'Buscando similares')
         salida["Error"] = 'No se encontraron coincidencias'
         sugerencias = []
         if len(lista) != 0:
+            log(f'Se encontraron {len(lista)} referencias para la entrada {entrada}')
             salida["Posibles valores"] = {}
             nombres = lista["NOMBRE"].unique().tolist()
             for i in nombres:
@@ -74,8 +90,9 @@ def preguntar(entrada):
 def get(fila):
     cpro = fila['CPRO']
     cmun = fila['CMUN']
-    print(f'{2:02d}')
-    return f"{int(cpro):02d}{int(cmun):03d}"
+    salida = f"{int(cpro):02d}{int(cmun):03d}"
+    log(f'El cp del municipio buscado es {salida}')
+    return salida
 
 def buscar(nombre):
     resultado = df[df["NOMBRE"].str.lower() == nombre.lower()]
@@ -88,8 +105,7 @@ def listar(nombre):
 def recogerTiempo(municipio):
     url = BASE + endpoint + str(municipio)
     response = requests.get(url, headers=authString)
-
-    print(response.status_code)
+    log(f'La api de AEMET a respondido con codigo {response.status_code}')
 
     if(response.status_code == 200):
         try:
@@ -105,7 +121,6 @@ def recogerTiempo(municipio):
             print(response.text)
 
 def parsearDatos(valores):
-    print(valores)
     jsData = valores.json()
     valores = jsData[0]
 
@@ -162,8 +177,10 @@ def main():
 
 @app.get('/municipio')
 def getMunicipioInfo(nombre : str = ''):
+    log(f'Un usuario ha solicitado el tiempo en el municipio {nombre}')
     return preguntar(nombre)
 
 
 if __name__ == "__main__":
+    log(f'Encendiendo el programa de API Rest')
     uvicorn.run(app, host="localhost", port= 8090)

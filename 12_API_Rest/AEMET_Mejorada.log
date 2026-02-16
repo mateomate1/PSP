@@ -1,0 +1,30 @@
+1771245786.0654697Encendiendo el programa de API Rest
+1771245795.210643Un usuario ha solicitado el tiempo en el municipio 
+1771245795.2167892Buscando el cp del municipio 
+1771245795.2172277No se encontro el municipio extacto
+1771245795.2273211Buscando similares
+1771245795.2278597Se encontraron 8131 referencias para la entrada 
+Time: 2026-02-16 13:46:21.904858 Msg: Encendiendo el programa de API Rest 
+Time: 2026-02-16 13:46:28.400667 Msg: Un usuario ha solicitado el tiempo en el municipio  
+Time: 2026-02-16 13:46:28.406331 Msg: Buscando el cp del municipio  
+Time: 2026-02-16 13:46:28.406837 Msg: No se encontro el municipio extacto 
+Time: 2026-02-16 13:46:28.410901 Msg: Buscando similares 
+Time: 2026-02-16 13:46:28.411473 Msg: Se encontraron 8131 referencias para la entrada  
+Time: 2026-02-16 13:47:36.059438 Msg: Encendiendo el programa de API Rest 
+Time: 2026-02-16 13:47:45.632031 Msg: Un usuario ha solicitado el tiempo en el municipio madrid 
+Time: 2026-02-16 13:47:45.636771 Msg: Buscando el cp del municipio madrid 
+Time: 2026-02-16 13:47:45.637421 Msg: El cp del municipio buscado es 28079 
+Time: 2026-02-16 13:49:43.079400 Msg: Encendiendo el programa de API Rest 
+Time: 2026-02-16 13:49:47.878769 Msg: Un usuario ha solicitado el tiempo en el municipio madrid 
+Time: 2026-02-16 13:49:47.883008 Msg: Buscando el cp del municipio madrid 
+Time: 2026-02-16 13:49:47.883595 Msg: El cp del municipio buscado es 28079 
+Time: 2026-02-16 13:53:20.256339 Msg: Encendiendo el programa de API Rest 
+Time: 2026-02-16 13:53:24.440666 Msg: Un usuario ha solicitado el tiempo en el municipio madrid 
+Time: 2026-02-16 13:53:24.444814 Msg: Buscando el cp del municipio madrid 
+Time: 2026-02-16 13:53:24.445292 Msg: El cp del municipio buscado es 28079 
+Time: 2026-02-16 13:53:24.744030 Msg: La api de AEMET a respondido con codigo 200 
+Time: 2026-02-16 13:54:19.605229 Msg: Encendiendo el programa de API Rest 
+Time: 2026-02-16 13:54:26.832277 Msg: Un usuario ha solicitado el tiempo en el municipio madrid 
+Time: 2026-02-16 13:54:26.836888 Msg: Buscando el cp del municipio madrid 
+Time: 2026-02-16 13:54:26.837531 Msg: El cp del municipio buscado es 28079 
+Time: 2026-02-16 13:54:42.157004 Msg: La api de AEMET a respondido con codigo 200 
