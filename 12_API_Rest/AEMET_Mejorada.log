@@ -1,21 +1,16 @@
-1771245786.0654697Encendiendo el programa de API Rest
-1771245795.210643Un usuario ha solicitado el tiempo en el municipio 
-1771245795.2167892Buscando el cp del municipio 
-1771245795.2172277No se encontro el municipio extacto
-1771245795.2273211Buscando similares
-1771245795.2278597Se encontraron 8131 referencias para la entrada 
-Time: 2026-02-16 13:46:21.904858 Msg: Encendiendo el programa de API Rest 
-Time: 2026-02-16 13:46:28.400667 Msg: Un usuario ha solicitado el tiempo en el municipio  
-Time: 2026-02-16 13:46:28.406331 Msg: Buscando el cp del municipio  
-Time: 2026-02-16 13:46:28.406837 Msg: No se encontro el municipio extacto 
-Time: 2026-02-16 13:46:28.410901 Msg: Buscando similares 
-Time: 2026-02-16 13:46:28.411473 Msg: Se encontraron 8131 referencias para la entrada  
-Time: 2026-02-16 13:47:36.059438 Msg: Encendiendo el programa de API Rest 
-Time: 2026-02-16 13:47:45.632031 Msg: Un usuario ha solicitado el tiempo en el municipio madrid 
-Time: 2026-02-16 13:47:45.636771 Msg: Buscando el cp del municipio madrid 
-Time: 2026-02-16 13:47:45.637421 Msg: El cp del municipio buscado es 28079 
-Time: 2026-02-16 13:49:43.079400 Msg: Encendiendo el programa de API Rest 
-Time: 2026-02-16 13:49:47.878769 Msg: Un usuario ha solicitado el tiempo en el municipio madrid 
+
+Time: 2026-02-16 13:46:21.904858 Msg: Encendiendo el programa de API Rest
+Time: 2026-02-16 13:46:28.400667 Msg: Un usuario ha solicitado el tiempo en el municipio
+Time: 2026-02-16 13:46:28.406331 Msg: Buscando el cp del municipio
+Time: 2026-02-16 13:46:28.406837 Msg: No se encontro el municipio extacto
+Time: 2026-02-16 13:46:28.410901 Msg: Buscando similares
+Time: 2026-02-16 13:46:28.411473 Msg: Se encontraron 8131 referencias para la entrada
+Time: 2026-02-16 13:47:36.059438 Msg: Encendiendo el programa de API Rest
+Time: 2026-02-16 13:47:45.632031 Msg: Un usuario ha solicitado el tiempo en el municipio madrid
+Time: 2026-02-16 13:47:45.636771 Msg: Buscando el cp del municipio madrid
+Time: 2026-02-16 13:47:45.637421 Msg: El cp del municipio buscado es 28079
+Time: 2026-02-16 13:49:43.079400 Msg: Encendiendo el programa de API Rest
+Time: 2026-02-16 13:49:47.878769 Msg: Un usuario ha solicitado el tiempo en el municipio madrid
 Time: 2026-02-16 13:49:47.883008 Msg: Buscando el cp del municipio madrid 
 Time: 2026-02-16 13:49:47.883595 Msg: El cp del municipio buscado es 28079 
 Time: 2026-02-16 13:53:20.256339 Msg: Encendiendo el programa de API Rest 
@@ -28,3 +23,50 @@ Time: 2026-02-16 13:54:26.832277 Msg: Un usuario ha solicitado el tiempo en el m
 Time: 2026-02-16 13:54:26.836888 Msg: Buscando el cp del municipio madrid 
 Time: 2026-02-16 13:54:26.837531 Msg: El cp del municipio buscado es 28079 
 Time: 2026-02-16 13:54:42.157004 Msg: La api de AEMET a respondido con codigo 200 
+Time: 2026-02-16 18:10:51.479314 Msg: Encendiendo el programa de API Rest 
+Time: 2026-02-16 18:11:04.019477 Msg: Un usuario ha solicitado el tiempo en el municipio madrid 
+Time: 2026-02-16 18:11:04.025170 Msg: Buscando el cp del municipio madrid 
+Time: 2026-02-16 18:11:04.026172 Msg: El cp del municipio buscado es 28079 
+Time: 2026-02-16 18:11:04.353797 Msg: La api de AEMET a respondido con codigo 200 
+Time: 2026-02-16 18:12:20.655212 Msg: Un usuario ha solicitado el tiempo en el municipio las tablas 
+Time: 2026-02-16 18:12:20.659253 Msg: Buscando el cp del municipio las tablas 
+Time: 2026-02-16 18:12:20.659907 Msg: No se encontro el municipio extacto 
+Time: 2026-02-16 18:12:20.663054 Msg: Buscando similares 
+Time: 2026-02-16 18:12:25.557901 Msg: Un usuario ha solicitado el tiempo en el municipio tablas 
+Time: 2026-02-16 18:12:25.560891 Msg: Buscando el cp del municipio tablas 
+Time: 2026-02-16 18:12:25.561407 Msg: No se encontro el municipio extacto 
+Time: 2026-02-16 18:12:25.564618 Msg: Buscando similares 
+Time: 2026-02-16 18:12:31.662973 Msg: Un usuario ha solicitado el tiempo en el municipio  
+Time: 2026-02-16 18:12:31.665959 Msg: Buscando el cp del municipio  
+Time: 2026-02-16 18:12:31.666632 Msg: No se encontro el municipio extacto 
+Time: 2026-02-16 18:12:31.670800 Msg: Buscando similares 
+Time: 2026-02-16 18:12:31.671355 Msg: Se encontraron 8131 referencias para la entrada  
+Time: 2026-02-16 18:12:38.384433 Msg: Un usuario ha solicitado el tiempo en el municipio vallecas 
+Time: 2026-02-16 18:12:38.387892 Msg: Buscando el cp del municipio vallecas 
+Time: 2026-02-16 18:12:38.388393 Msg: No se encontro el municipio extacto 
+Time: 2026-02-16 18:12:38.391282 Msg: Buscando similares 
+Time: 2026-02-16 18:12:42.278307 Msg: Un usuario ha solicitado el tiempo en el municipio  
+Time: 2026-02-16 18:12:42.281506 Msg: Buscando el cp del municipio  
+Time: 2026-02-16 18:12:42.282188 Msg: No se encontro el municipio extacto 
+Time: 2026-02-16 18:12:42.286516 Msg: Buscando similares 
+Time: 2026-02-16 18:12:42.287026 Msg: Se encontraron 8131 referencias para la entrada  
+Time: 2026-02-16 18:12:52.183459 Msg: Un usuario ha solicitado el tiempo en el municipio va 
+Time: 2026-02-16 18:12:52.185870 Msg: Buscando el cp del municipio va 
+Time: 2026-02-16 18:12:52.186339 Msg: No se encontro el municipio extacto 
+Time: 2026-02-16 18:12:52.189801 Msg: Buscando similares 
+Time: 2026-02-16 18:12:52.190417 Msg: Se encontraron 736 referencias para la entrada va 
+Time: 2026-02-16 18:18:25.736622 Msg: Un usuario ha solicitado el tiempo en el municipio "San Sebastián de los Reyes" 
+Time: 2026-02-16 18:18:25.740442 Msg: Buscando el cp del municipio "San Sebastián de los Reyes" 
+Time: 2026-02-16 18:18:25.740969 Msg: No se encontro el municipio extacto 
+Time: 2026-02-16 18:18:25.743378 Msg: Buscando similares 
+Time: 2026-02-16 18:18:37.111639 Msg: Un usuario ha solicitado el tiempo en el municipio San Sebastián de los Reyes 
+Time: 2026-02-16 18:18:37.114654 Msg: Buscando el cp del municipio San Sebastián de los Reyes 
+Time: 2026-02-16 18:18:37.115478 Msg: El cp del municipio buscado es 28134 
+Time: 2026-02-16 18:18:37.428626 Msg: La api de AEMET a respondido con codigo 200 
+Time: 2026-02-16 18:22:21.350389 Msg: La api de AEMET a respondido con codigo 200 
+Time: 2026-02-16 18:22:21.604320 Msg: Encendiendo el programa de API Rest 
+Time: 2026-02-16 18:23:19.450540 Msg: Encendiendo el programa de API Rest 
+Time: 2026-02-16 18:23:25.897083 Msg: Un usuario ha solicitado el tiempo en el municipio San Sebastián de los Reyes 
+Time: 2026-02-16 18:23:25.901331 Msg: Buscando el cp del municipio San Sebastián de los Reyes 
+Time: 2026-02-16 18:23:25.902026 Msg: El cp del municipio buscado es 28134 
+Time: 2026-02-16 18:23:26.225059 Msg: La api de AEMET a respondido con codigo 200 

@@ -112,9 +112,9 @@ def recogerTiempo(municipio):
             jsRespuesta = response.json()
             urlToCall = jsRespuesta['datos']
             prediccion = requests.get(urlToCall, headers=authString)
-            # jsData = prediccion.json()
+            jsData = prediccion.json()
             # Para imprimir el json bonito:
-            # print(json.dumps(jsData, indent=4, ensure_ascii=False))
+            print(json.dumps(jsData, indent=4, ensure_ascii=False))
             return prediccion
         except:
             print("Formato de la respuesta erroneo")
