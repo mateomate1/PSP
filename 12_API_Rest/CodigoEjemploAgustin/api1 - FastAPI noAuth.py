@@ -46,7 +46,7 @@ def addInt(item: int):
 def addJSON(item: Item):
     gotItems.append(item)
     return {"Recibida":{'nombre': item.nombre, 'edad':item.edad} }
-  
+
 # Formato de la llamada URLBASE/getList
 @app.get("/getlist")
 def returnList():

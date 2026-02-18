@@ -1,7 +1,8 @@
 #Creacion API con FastAPI
-from fastapi import FastAPI, Security, HTTPException, status, Depends
+from fastapi import FastAPI, Security, HTTPException, status, Depends, Body
 from fastapi.security import APIKeyHeader
 import uvicorn
+from pydantic import BaseModel
 #Request a una api
 import requests
 from requests.auth import HTTPBasicAuth
@@ -53,6 +54,37 @@ def definirPersona(nombre:str, edad:str):
     return f'Has creado a {nombre}, con {edad} años'
 #Se le llama asi:
 #http://.../persona?nombre=mateo&edad=22
+
+#En caso de querer varios valores pasados por json en el body de la request hay 3 metodos:
+#1 Pedirle que pase un dict
+@app.post('/addjson')
+def update(datos:dict = Body()):
+    return f'Buenos dias {datos.get('nombre')}, el dia {datos.get('fNac')}, cumples anos, felicidades'
+
+#2 Recuperar los datos directamente del body
+@app.post('addjson')
+def update(
+    nombre:str = Body(),
+    edad:int = Body(),
+    curso:str = Body()
+):
+    return f'{nombre} tiene {edad} anos y esta en el curso {curso}'
+
+#3 Crear una clase y que se mapee con BaseModel de pydantic
+class Usuario(BaseModel):
+    nombre: str
+    edad: int
+    activo: bool
+
+#En este caso usuario_id lo recibe como atributo html
+@app.put("/usuarios/{usuario_id}")
+def actualizar_usuario(usuario_id: int, usuario: Usuario):
+    return {
+        "id": usuario_id,
+        "nombre": usuario.nombre,
+        "edad": usuario.edad,
+        "activo": usuario.activo
+    }
 
 #Procesar respuestas:
 
